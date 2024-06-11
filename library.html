@@ -63,7 +63,76 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#ex-installer">ex_installer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#excommandstation">EXCommandStation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#manage-arduino-cli">manage_arduino_cli</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.check_arduino_cli"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.check_arduino_cli()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.get_library_list"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.get_library_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.install_instruction_text"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.install_instruction_text</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.installed_text"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.installed_text</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.intro_text"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.intro_text</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.manage_cli"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.manage_cli()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.not_installed_text"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.not_installed_text</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.refresh_instruction_text"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.refresh_instruction_text</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.set_state"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.set_state()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.update_package_list"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.update_package_list()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#select-device">select_device</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ex_installer.select_device.SelectDevice"><code class="docutils literal notranslate"><span class="pre">SelectDevice</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_device.SelectDevice.get_port_description"><code class="docutils literal notranslate"><span class="pre">SelectDevice.get_port_description()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_device.SelectDevice.instruction_text"><code class="docutils literal notranslate"><span class="pre">SelectDevice.instruction_text</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_device.SelectDevice.list_devices"><code class="docutils literal notranslate"><span class="pre">SelectDevice.list_devices()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_device.SelectDevice.select_device"><code class="docutils literal notranslate"><span class="pre">SelectDevice.select_device()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_device.SelectDevice.set_state"><code class="docutils literal notranslate"><span class="pre">SelectDevice.set_state()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_device.SelectDevice.update_board"><code class="docutils literal notranslate"><span class="pre">SelectDevice.update_board()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#select-product">select_product</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ex_installer.select_product.SelectProduct"><code class="docutils literal notranslate"><span class="pre">SelectProduct</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_product.SelectProduct.check_product_device"><code class="docutils literal notranslate"><span class="pre">SelectProduct.check_product_device()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#select-version-config">select_version_config</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.browse_configdir"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.browse_configdir()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.copy_config_files"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.copy_config_files()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.delete_config_files"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.delete_config_files()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.resolve_local_changes"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.resolve_local_changes()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.set_next_config"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.set_next_config()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.set_product"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.set_product()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.set_select_version"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.set_select_version()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.set_version"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.set_version()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.set_versions"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.set_versions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.setup_local_repo"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.setup_local_repo()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.setup_version_frame"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.setup_version_frame()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.validate_config_dir"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.validate_config_dir()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.version_text"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.version_text</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#serial-monitor">serial_monitor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor"><code class="docutils literal notranslate"><span class="pre">SerialMonitor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.browse_log_dir"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.browse_log_dir()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.close_monitor"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.close_monitor()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.exception_handler"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.exception_handler()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.monitor"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.monitor()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.read_output"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.read_output()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.save_log_file"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.save_log_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.send_command"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.send_command()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.show_save_log_popup"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.show_save_log_popup()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.update_textbox"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.update_textbox()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ex-commandstation">ex_commandstation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#ex_installer.ex_commandstation.EXCommandStation"><code class="docutils literal notranslate"><span class="pre">EXCommandStation</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#ex_installer.ex_commandstation.EXCommandStation.check_invalid_wifi_password"><code class="docutils literal notranslate"><span class="pre">EXCommandStation.check_invalid_wifi_password()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#ex_installer.ex_commandstation.EXCommandStation.check_motor_driver"><code class="docutils literal notranslate"><span class="pre">EXCommandStation.check_motor_driver()</span></code></a></li>
@@ -257,72 +326,26 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#git-client">git_client</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#manage-arduino-cli">manage_arduino_cli</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.check_arduino_cli"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.check_arduino_cli()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.get_library_list"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.get_library_list()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.install_instruction_text"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.install_instruction_text</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.installed_text"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.installed_text</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.intro_text"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.intro_text</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.manage_cli"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.manage_cli()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.not_installed_text"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.not_installed_text</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.refresh_instruction_text"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.refresh_instruction_text</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.set_state"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.set_state()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.update_package_list"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.update_package_list()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#git-client">git_client</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ex_installer.git_client.ThreadedGitClient"><code class="docutils literal notranslate"><span class="pre">ThreadedGitClient</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.git_client.ThreadedGitClient.api_lock"><code class="docutils literal notranslate"><span class="pre">ThreadedGitClient.api_lock</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.git_client.ThreadedGitClient.run"><code class="docutils literal notranslate"><span class="pre">ThreadedGitClient.run()</span></code></a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#select-device">select_device</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ex_installer.select_device.SelectDevice"><code class="docutils literal notranslate"><span class="pre">SelectDevice</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_device.SelectDevice.get_port_description"><code class="docutils literal notranslate"><span class="pre">SelectDevice.get_port_description()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_device.SelectDevice.instruction_text"><code class="docutils literal notranslate"><span class="pre">SelectDevice.instruction_text</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_device.SelectDevice.list_devices"><code class="docutils literal notranslate"><span class="pre">SelectDevice.list_devices()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_device.SelectDevice.select_device"><code class="docutils literal notranslate"><span class="pre">SelectDevice.select_device()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_device.SelectDevice.set_state"><code class="docutils literal notranslate"><span class="pre">SelectDevice.set_state()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_device.SelectDevice.update_board"><code class="docutils literal notranslate"><span class="pre">SelectDevice.update_board()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#select-product">select_product</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ex_installer.select_product.SelectProduct"><code class="docutils literal notranslate"><span class="pre">SelectProduct</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_product.SelectProduct.check_product_device"><code class="docutils literal notranslate"><span class="pre">SelectProduct.check_product_device()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#select-version-config">select_version_config</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.browse_configdir"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.browse_configdir()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.copy_config_files"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.copy_config_files()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.delete_config_files"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.delete_config_files()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.resolve_local_changes"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.resolve_local_changes()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.set_next_config"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.set_next_config()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.set_product"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.set_product()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.set_select_version"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.set_select_version()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.set_version"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.set_version()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.set_versions"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.set_versions()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.setup_local_repo"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.setup_local_repo()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.setup_version_frame"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.setup_version_frame()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.validate_config_dir"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.validate_config_dir()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.select_version_config.SelectVersionConfig.version_text"><code class="docutils literal notranslate"><span class="pre">SelectVersionConfig.version_text</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#serial-monitor">serial_monitor</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor"><code class="docutils literal notranslate"><span class="pre">SerialMonitor</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.browse_log_dir"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.browse_log_dir()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.close_monitor"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.close_monitor()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.exception_handler"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.exception_handler()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.monitor"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.monitor()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.read_output"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.read_output()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.save_log_file"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.save_log_file()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.send_command"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.send_command()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.show_save_log_popup"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.show_save_log_popup()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.serial_monitor.SerialMonitor.update_textbox"><code class="docutils literal notranslate"><span class="pre">SerialMonitor.update_textbox()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ex_installer.git_client.GitClient"><code class="docutils literal notranslate"><span class="pre">GitClient</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.git_client.GitClient.check_local_changes"><code class="docutils literal notranslate"><span class="pre">GitClient.check_local_changes()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.git_client.GitClient.clone_repo"><code class="docutils literal notranslate"><span class="pre">GitClient.clone_repo()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.git_client.GitClient.dir_is_git_repo"><code class="docutils literal notranslate"><span class="pre">GitClient.dir_is_git_repo()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.git_client.GitClient.extract_version_details"><code class="docutils literal notranslate"><span class="pre">GitClient.extract_version_details()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.git_client.GitClient.get_branch_ref"><code class="docutils literal notranslate"><span class="pre">GitClient.get_branch_ref()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.git_client.GitClient.get_latest_devel"><code class="docutils literal notranslate"><span class="pre">GitClient.get_latest_devel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.git_client.GitClient.get_latest_prod"><code class="docutils literal notranslate"><span class="pre">GitClient.get_latest_prod()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.git_client.GitClient.get_repo"><code class="docutils literal notranslate"><span class="pre">GitClient.get_repo()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.git_client.GitClient.get_repo_versions"><code class="docutils literal notranslate"><span class="pre">GitClient.get_repo_versions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.git_client.GitClient.git_hard_reset"><code class="docutils literal notranslate"><span class="pre">GitClient.git_hard_reset()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.git_client.GitClient.log"><code class="docutils literal notranslate"><span class="pre">GitClient.log</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.git_client.GitClient.pull"><code class="docutils literal notranslate"><span class="pre">GitClient.pull()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.git_client.GitClient.pull_latest"><code class="docutils literal notranslate"><span class="pre">GitClient.pull_latest()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -376,9 +399,314 @@
 <section id="ex-installer">
 <h2>ex_installer<a class="headerlink" href="#ex-installer" title="Link to this heading"></a></h2>
 </section>
+<section id="manage-arduino-cli">
+<h2>manage_arduino_cli<a class="headerlink" href="#manage-arduino-cli" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.manage_arduino_cli.</span></span><span class="sig-name descname"><span class="pre">ManageArduinoCLI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI" title="Link to this definition"></a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.check_arduino_cli">
+<span class="sig-name descname"><span class="pre">check_arduino_cli</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.check_arduino_cli" title="Link to this definition"></a></dt>
+<dd><p>Function to check if the Arduino CLI is installed and if so, what version it is</p>
+<p>On completion, will move to the Manage Arduino CLI screen</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.get_library_list">
+<span class="sig-name descname"><span class="pre">get_library_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.get_library_list" title="Link to this definition"></a></dt>
+<dd><p>Get list of library dependencies from product details</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.install_instruction_text">
+<span class="sig-name descname"><span class="pre">install_instruction_text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'To</span> <span class="pre">install</span> <span class="pre">the</span> <span class="pre">Arduino</span> <span class="pre">CLI,</span> <span class="pre">simply</span> <span class="pre">click</span> <span class="pre">the</span> <span class="pre">install</span> <span class="pre">button.\n\nIf</span> <span class="pre">you</span> <span class="pre">are</span> <span class="pre">using</span> <span class="pre">an</span> <span class="pre">Espressif</span> <span class="pre">or</span> <span class="pre">STMicroelectronics</span> <span class="pre">device</span> <span class="pre">(as</span> <span class="pre">opposed</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">more</span> <span class="pre">common</span> <span class="pre">Uno</span> <span class="pre">or</span> <span class="pre">Mega</span> <span class="pre">based</span> <span class="pre">Arduinos),</span> <span class="pre">you</span> <span class="pre">will</span> <span class="pre">need</span> <span class="pre">to</span> <span class="pre">enable</span> <span class="pre">support</span> <span class="pre">for</span> <span class="pre">these</span> <span class="pre">by</span> <span class="pre">selecting</span> <span class="pre">the</span> <span class="pre">appropriate</span> <span class="pre">additional</span> <span class="pre">platform</span> <span class="pre">option.\n\nNote</span> <span class="pre">that</span> <span class="pre">enabling</span> <span class="pre">additional</span> <span class="pre">platforms</span> <span class="pre">is</span> <span class="pre">likely</span> <span class="pre">to</span> <span class="pre">add</span> <span class="pre">several</span> <span class="pre">minutes</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">installation</span> <span class="pre">process.</span> <span class="pre">Maybe</span> <span class="pre">grab</span> <span class="pre">a</span> <span class="pre">cup</span> <span class="pre">of</span> <span class="pre">tea</span> <span class="pre">or</span> <span class="pre">a</span> <span class="pre">coffee!'</span></em><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.install_instruction_text" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.installed_text">
+<span class="sig-name descname"><span class="pre">installed_text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'The</span> <span class="pre">Arduino</span> <span class="pre">CLI</span> <span class="pre">is</span> <span class="pre">installed'</span></em><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.installed_text" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.intro_text">
+<span class="sig-name descname"><span class="pre">intro_text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'We</span> <span class="pre">use</span> <span class="pre">the</span> <span class="pre">Arduino</span> <span class="pre">Command</span> <span class="pre">Line</span> <span class="pre">Interface</span> <span class="pre">(CLI)</span> <span class="pre">to</span> <span class="pre">upload</span> <span class="pre">the</span> <span class="pre">DCC-EX</span> <span class="pre">products</span> <span class="pre">to</span> <span class="pre">your</span> <span class="pre">Arduino.</span> <span class="pre">The</span> <span class="pre">CLI</span> <span class="pre">eliminates</span> <span class="pre">the</span> <span class="pre">need</span> <span class="pre">to</span> <span class="pre">install</span> <span class="pre">the</span> <span class="pre">more</span> <span class="pre">daunting</span> <span class="pre">Arduino</span> <span class="pre">IDE.</span> <span class="pre">EX-Installer</span> <span class="pre">is</span> <span class="pre">able</span> <span class="pre">to</span> <span class="pre">manage</span> <span class="pre">the</span> <span class="pre">installation</span> <span class="pre">and</span> <span class="pre">updating</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">Arduino</span> <span class="pre">CLI</span> <span class="pre">for</span> <span class="pre">you</span> <span class="pre">at</span> <span class="pre">the</span> <span class="pre">click</span> <span class="pre">of</span> <span class="pre">a</span> <span class="pre">button.'</span></em><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.intro_text" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.manage_cli">
+<span class="sig-name descname"><span class="pre">manage_cli</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.manage_cli" title="Link to this definition"></a></dt>
+<dd><p>Manage the Arduino CLI</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.not_installed_text">
+<span class="sig-name descname"><span class="pre">not_installed_text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'The</span> <span class="pre">Arduino</span> <span class="pre">CLI</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">installed'</span></em><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.not_installed_text" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.refresh_instruction_text">
+<span class="sig-name descname"><span class="pre">refresh_instruction_text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'While</span> <span class="pre">the</span> <span class="pre">Arduino</span> <span class="pre">CLI</span> <span class="pre">is</span> <span class="pre">installed,</span> <span class="pre">it</span> <span class="pre">is</span> <span class="pre">recommended</span> <span class="pre">to</span> <span class="pre">refresh</span> <span class="pre">it</span> <span class="pre">periodically</span> <span class="pre">(eg.</span> <span class="pre">weekly)</span> <span class="pre">to</span> <span class="pre">ensure</span> <span class="pre">support</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">various</span> <span class="pre">devices</span> <span class="pre">is</span> <span class="pre">kept</span> <span class="pre">up</span> <span class="pre">to</span> <span class="pre">date.</span> <span class="pre">To</span> <span class="pre">refresh</span> <span class="pre">the</span> <span class="pre">CLI,</span> <span class="pre">simply</span> <span class="pre">click</span> <span class="pre">the</span> <span class="pre">refresh</span> <span class="pre">button.\n\nNote</span> <span class="pre">that</span> <span class="pre">enabling</span> <span class="pre">any</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">additional</span> <span class="pre">platforms</span> <span class="pre">is</span> <span class="pre">likely</span> <span class="pre">to</span> <span class="pre">add</span> <span class="pre">several</span> <span class="pre">minutes</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">refresh</span> <span class="pre">process.</span> <span class="pre">Maybe</span> <span class="pre">grab</span> <span class="pre">a</span> <span class="pre">cup</span> <span class="pre">of</span> <span class="pre">tea</span> <span class="pre">or</span> <span class="pre">a</span> <span class="pre">coffee!'</span></em><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.refresh_instruction_text" title="Link to this definition"></a></dt>
+<dd><p>Class for the Manage Arduino CLI view</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.set_state">
+<span class="sig-name descname"><span class="pre">set_state</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.set_state" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.update_package_list">
+<span class="sig-name descname"><span class="pre">update_package_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">switch</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.update_package_list" title="Link to this definition"></a></dt>
+<dd><p>Maintain the list of packages to install/refresh when switches updated</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
 <hr class="docutils" />
-<section id="excommandstation">
-<h2>EXCommandStation<a class="headerlink" href="#excommandstation" title="Link to this heading"></a></h2>
+<section id="select-device">
+<h2>select_device<a class="headerlink" href="#select-device" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ex_installer.select_device.SelectDevice">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.select_device.</span></span><span class="sig-name descname"><span class="pre">SelectDevice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_device.SelectDevice" title="Link to this definition"></a></dt>
+<dd><p>Class for the Select Device view</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_device.SelectDevice.get_port_description">
+<span class="sig-name descname"><span class="pre">get_port_description</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">unknown_port</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_device.SelectDevice.get_port_description" title="Link to this definition"></a></dt>
+<dd><p>Function to obtain USB/serial port descriptions using pyserial for ports the CLI doesn’t identify</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ex_installer.select_device.SelectDevice.instruction_text">
+<span class="sig-name descname"><span class="pre">instruction_text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&quot;Ensure</span> <span class="pre">your</span> <span class="pre">Arduino</span> <span class="pre">device</span> <span class="pre">is</span> <span class="pre">connected</span> <span class="pre">to</span> <span class="pre">your</span> <span class="pre">computer's</span> <span class="pre">USB</span> <span class="pre">port.\n\nIf</span> <span class="pre">the</span> <span class="pre">device</span> <span class="pre">detected</span> <span class="pre">matches</span> <span class="pre">multiple</span> <span class="pre">devices,</span> <span class="pre">select</span> <span class="pre">the</span> <span class="pre">correct</span> <span class="pre">one</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">pulldown</span> <span class="pre">list</span> <span class="pre">provided.\n\nIf</span> <span class="pre">you</span> <span class="pre">have</span> <span class="pre">a</span> <span class="pre">generic</span> <span class="pre">or</span> <span class="pre">clone</span> <span class="pre">device,</span> <span class="pre">it</span> <span class="pre">likely</span> <span class="pre">appears</span> <span class="pre">as</span> <span class="pre">“Unknown”.</span> <span class="pre">In</span> <span class="pre">this</span> <span class="pre">instance,</span> <span class="pre">you</span> <span class="pre">will</span> <span class="pre">need</span> <span class="pre">to</span> <span class="pre">select</span> <span class="pre">the</span> <span class="pre">appropriate</span> <span class="pre">device</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">pulldown</span> <span class="pre">list</span> <span class="pre">provided.&quot;</span></em><a class="headerlink" href="#ex_installer.select_device.SelectDevice.instruction_text" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_device.SelectDevice.list_devices">
+<span class="sig-name descname"><span class="pre">list_devices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_device.SelectDevice.list_devices" title="Link to this definition"></a></dt>
+<dd><p>Use the Arduino CLI to list attached devices</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_device.SelectDevice.select_device">
+<span class="sig-name descname"><span class="pre">select_device</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_device.SelectDevice.select_device" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_device.SelectDevice.set_state">
+<span class="sig-name descname"><span class="pre">set_state</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_device.SelectDevice.set_state" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_device.SelectDevice.update_board">
+<span class="sig-name descname"><span class="pre">update_board</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_device.SelectDevice.update_board" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="select-product">
+<h2>select_product<a class="headerlink" href="#select-product" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ex_installer.select_product.SelectProduct">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.select_product.</span></span><span class="sig-name descname"><span class="pre">SelectProduct</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_product.SelectProduct" title="Link to this definition"></a></dt>
+<dd><p>Class for the Select Product view</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_product.SelectProduct.check_product_device">
+<span class="sig-name descname"><span class="pre">check_product_device</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_product.SelectProduct.check_product_device" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="select-version-config">
+<h2>select_version_config<a class="headerlink" href="#select-version-config" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.select_version_config.</span></span><span class="sig-name descname"><span class="pre">SelectVersionConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig" title="Link to this definition"></a></dt>
+<dd><p>Class for selecting the version and config directory</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.browse_configdir">
+<span class="sig-name descname"><span class="pre">browse_configdir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.browse_configdir" title="Link to this definition"></a></dt>
+<dd><p>Opens a file browser dialogue to allow user to select a config file to use</p>
+<p>Uses directory of this file to set the config directory</p>
+<p>This is a workaround for “askdirectory()” not showing files, which is confusing for users</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.copy_config_files">
+<span class="sig-name descname"><span class="pre">copy_config_files</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.copy_config_files" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Function to copy config files from selected directory to product directory</dt><dd><p>also switches view to advanced_config if copy is successful</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.delete_config_files">
+<span class="sig-name descname"><span class="pre">delete_config_files</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.delete_config_files" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Function to delete config files from product directory</dt><dd><p>needed on subsequent passes thru the logic</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.resolve_local_changes">
+<span class="sig-name descname"><span class="pre">resolve_local_changes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">changes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.resolve_local_changes" title="Link to this definition"></a></dt>
+<dd><p>Function to prompt the user to resolve locally detected repository changes</p>
+<p>Resolution means perforing a git hard reset, cancel means exiting the app</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.set_next_config">
+<span class="sig-name descname"><span class="pre">set_next_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.set_next_config" title="Link to this definition"></a></dt>
+<dd><p>Function to select what configuration to do next</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.set_product">
+<span class="sig-name descname"><span class="pre">set_product</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.set_product" title="Link to this definition"></a></dt>
+<dd><p>Function to set the product details to manage the repository</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.set_select_version">
+<span class="sig-name descname"><span class="pre">set_select_version</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.set_select_version" title="Link to this definition"></a></dt>
+<dd><p>Function to set select a specific version when setting via combobox</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.set_version">
+<span class="sig-name descname"><span class="pre">set_version</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.set_version" title="Link to this definition"></a></dt>
+<dd><p>Function to checkout the selected version according to the radio buttons</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.set_versions">
+<span class="sig-name descname"><span class="pre">set_versions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repo</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.set_versions" title="Link to this definition"></a></dt>
+<dd><p>Function to obtain versions available in the repo</p>
+<p>Once versions obtained, set appropriately</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.setup_local_repo">
+<span class="sig-name descname"><span class="pre">setup_local_repo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.setup_local_repo" title="Link to this definition"></a></dt>
+<dd><p>Function to setup the local repository</p>
+<p>Process:
+- check if the product directory already exists
+- if so</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>if the product directory is already a cloned repo</p></li>
+<li><p>any locally modified files that would interfere with Git commands (prompt to resolve)</p></li>
+<li><p>delete any existing configuration files</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>if not, clone repo</p></li>
+<li><p>get list of versions, latest prod, and latest devel versions</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.setup_version_frame">
+<span class="sig-name descname"><span class="pre">setup_version_frame</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.setup_version_frame" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.validate_config_dir">
+<span class="sig-name descname"><span class="pre">validate_config_dir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.validate_config_dir" title="Link to this definition"></a></dt>
+<dd><p>Function to validate the selected directory for config files:</p>
+<ul class="simple">
+<li><p>Is a valid directory</p></li>
+<li><p>Contains at least the specified minimum config files</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.version_text">
+<span class="sig-name descname"><span class="pre">version_text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&quot;For</span> <span class="pre">most</span> <span class="pre">users</span> <span class="pre">we</span> <span class="pre">recommend</span> <span class="pre">staying</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">latest</span> <span class="pre">Production</span> <span class="pre">release,</span> <span class="pre">however</span> <span class="pre">you</span> <span class="pre">can</span> <span class="pre">install</span> <span class="pre">other</span> <span class="pre">versions</span> <span class="pre">if</span> <span class="pre">you</span> <span class="pre">know</span> <span class="pre">what</span> <span class="pre">you're</span> <span class="pre">doing,</span> <span class="pre">or</span> <span class="pre">if</span> <span class="pre">a</span> <span class="pre">version</span> <span class="pre">has</span> <span class="pre">been</span> <span class="pre">suggested</span> <span class="pre">by</span> <span class="pre">the</span> <span class="pre">DCC-EX</span> <span class="pre">team.&quot;</span></em><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.version_text" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="serial-monitor">
+<h2>serial_monitor<a class="headerlink" href="#serial-monitor" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.serial_monitor.</span></span><span class="sig-name descname"><span class="pre">SerialMonitor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor" title="Link to this definition"></a></dt>
+<dd><p>Class to define a window for the serial monitor</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.browse_log_dir">
+<span class="sig-name descname"><span class="pre">browse_log_dir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.browse_log_dir" title="Link to this definition"></a></dt>
+<dd><p>Opens a directory browser dialogue to select the folder to save the device log to</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.close_monitor">
+<span class="sig-name descname"><span class="pre">close_monitor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.close_monitor" title="Link to this definition"></a></dt>
+<dd><p>Close the monitor window nicely:</p>
+<ul class="simple">
+<li><p>If serial port open, close it</p></li>
+<li><p>If thread running, join/end it</p></li>
+<li><p>Destroy this object</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.exception_handler">
+<span class="sig-name descname"><span class="pre">exception_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exc_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_traceback</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.exception_handler" title="Link to this definition"></a></dt>
+<dd><p>Handler for uncaught exceptions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.monitor">
+<span class="sig-name descname"><span class="pre">monitor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.monitor" title="Link to this definition"></a></dt>
+<dd><p>Function to monitoring using PySerial</p>
+<p>Starts the process, and then creates a thread to read the output continuously</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.read_output">
+<span class="sig-name descname"><span class="pre">read_output</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.read_output" title="Link to this definition"></a></dt>
+<dd><p>Function to read serial output</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.save_log_file">
+<span class="sig-name descname"><span class="pre">save_log_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.save_log_file" title="Link to this definition"></a></dt>
+<dd><p>Function to save the device log file to the chosen location, and open it</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.send_command">
+<span class="sig-name descname"><span class="pre">send_command</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.send_command" title="Link to this definition"></a></dt>
+<dd><p>Function to send a command to the serial port</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.show_save_log_popup">
+<span class="sig-name descname"><span class="pre">show_save_log_popup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.show_save_log_popup" title="Link to this definition"></a></dt>
+<dd><p>Function to show the message box to select the folder to save device log</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.update_textbox">
+<span class="sig-name descname"><span class="pre">update_textbox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.update_textbox" title="Link to this definition"></a></dt>
+<dd><p>Function to update the textbox with output from the Arduino CLI in monitor mode</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="ex-commandstation">
+<h2>ex_commandstation<a class="headerlink" href="#ex-commandstation" title="Link to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="ex_installer.ex_commandstation.EXCommandStation">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.ex_commandstation.</span></span><span class="sig-name descname"><span class="pre">EXCommandStation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.ex_commandstation.EXCommandStation" title="Link to this definition"></a></dt>
@@ -595,14 +923,10 @@ else:
 <dd><p>Function to be called by the switch_frame function to set the chosen version</p>
 <p>This allows configuration options to be set based on the chosen version</p>
 <p>Eg.
-if self.product_major_version &gt;=4 and self.product_minor_version &gt;= 2:</p>
-<blockquote>
-<div><p>function_enables_track_manager()</p>
-</div></blockquote>
-<dl class="simple">
-<dt>else:</dt><dd><p>function_disables_track_manager()</p>
-</dd>
-</dl>
+if self.product_major_version &gt;=4 and self.product_minor_version &gt;= 2:
+-    function_enables_track_manager()
+else:
+-    function_disables_track_manager()</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1399,312 +1723,125 @@ CreateTooltip(self.widget, “Tool tip contextual help text”[, URL])</p>
 <hr class="docutils" />
 <section id="git-client">
 <h2>git_client<a class="headerlink" href="#git-client" title="Link to this heading"></a></h2>
-</section>
-<hr class="docutils" />
-<section id="manage-arduino-cli">
-<h2>manage_arduino_cli<a class="headerlink" href="#manage-arduino-cli" title="Link to this heading"></a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.manage_arduino_cli.</span></span><span class="sig-name descname"><span class="pre">ManageArduinoCLI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI" title="Link to this definition"></a></dt>
-<dd><dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.check_arduino_cli">
-<span class="sig-name descname"><span class="pre">check_arduino_cli</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.check_arduino_cli" title="Link to this definition"></a></dt>
-<dd><p>Function to check if the Arduino CLI is installed and if so, what version it is</p>
-<p>On completion, will move to the Manage Arduino CLI screen</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.get_library_list">
-<span class="sig-name descname"><span class="pre">get_library_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.get_library_list" title="Link to this definition"></a></dt>
-<dd><p>Get list of library dependencies from product details</p>
-</dd></dl>
-
+<dt class="sig sig-object py" id="ex_installer.git_client.ThreadedGitClient">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.git_client.</span></span><span class="sig-name descname"><span class="pre">ThreadedGitClient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.git_client.ThreadedGitClient" title="Link to this definition"></a></dt>
+<dd><p>Class for running pygit2 tasks in a separate thread</p>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.install_instruction_text">
-<span class="sig-name descname"><span class="pre">install_instruction_text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'To</span> <span class="pre">install</span> <span class="pre">the</span> <span class="pre">Arduino</span> <span class="pre">CLI,</span> <span class="pre">simply</span> <span class="pre">click</span> <span class="pre">the</span> <span class="pre">install</span> <span class="pre">button.\n\nIf</span> <span class="pre">you</span> <span class="pre">are</span> <span class="pre">using</span> <span class="pre">an</span> <span class="pre">Espressif</span> <span class="pre">or</span> <span class="pre">STMicroelectronics</span> <span class="pre">device</span> <span class="pre">(as</span> <span class="pre">opposed</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">more</span> <span class="pre">common</span> <span class="pre">Uno</span> <span class="pre">or</span> <span class="pre">Mega</span> <span class="pre">based</span> <span class="pre">Arduinos),</span> <span class="pre">you</span> <span class="pre">will</span> <span class="pre">need</span> <span class="pre">to</span> <span class="pre">enable</span> <span class="pre">support</span> <span class="pre">for</span> <span class="pre">these</span> <span class="pre">by</span> <span class="pre">selecting</span> <span class="pre">the</span> <span class="pre">appropriate</span> <span class="pre">additional</span> <span class="pre">platform</span> <span class="pre">option.\n\nNote</span> <span class="pre">that</span> <span class="pre">enabling</span> <span class="pre">additional</span> <span class="pre">platforms</span> <span class="pre">is</span> <span class="pre">likely</span> <span class="pre">to</span> <span class="pre">add</span> <span class="pre">several</span> <span class="pre">minutes</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">installation</span> <span class="pre">process.</span> <span class="pre">Maybe</span> <span class="pre">grab</span> <span class="pre">a</span> <span class="pre">cup</span> <span class="pre">of</span> <span class="pre">tea</span> <span class="pre">or</span> <span class="pre">a</span> <span class="pre">coffee!'</span></em><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.install_instruction_text" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.installed_text">
-<span class="sig-name descname"><span class="pre">installed_text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'The</span> <span class="pre">Arduino</span> <span class="pre">CLI</span> <span class="pre">is</span> <span class="pre">installed'</span></em><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.installed_text" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.intro_text">
-<span class="sig-name descname"><span class="pre">intro_text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'We</span> <span class="pre">use</span> <span class="pre">the</span> <span class="pre">Arduino</span> <span class="pre">Command</span> <span class="pre">Line</span> <span class="pre">Interface</span> <span class="pre">(CLI)</span> <span class="pre">to</span> <span class="pre">upload</span> <span class="pre">the</span> <span class="pre">DCC-EX</span> <span class="pre">products</span> <span class="pre">to</span> <span class="pre">your</span> <span class="pre">Arduino.</span> <span class="pre">The</span> <span class="pre">CLI</span> <span class="pre">eliminates</span> <span class="pre">the</span> <span class="pre">need</span> <span class="pre">to</span> <span class="pre">install</span> <span class="pre">the</span> <span class="pre">more</span> <span class="pre">daunting</span> <span class="pre">Arduino</span> <span class="pre">IDE.</span> <span class="pre">EX-Installer</span> <span class="pre">is</span> <span class="pre">able</span> <span class="pre">to</span> <span class="pre">manage</span> <span class="pre">the</span> <span class="pre">installation</span> <span class="pre">and</span> <span class="pre">updating</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">Arduino</span> <span class="pre">CLI</span> <span class="pre">for</span> <span class="pre">you</span> <span class="pre">at</span> <span class="pre">the</span> <span class="pre">click</span> <span class="pre">of</span> <span class="pre">a</span> <span class="pre">button.'</span></em><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.intro_text" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="ex_installer.git_client.ThreadedGitClient.api_lock">
+<span class="sig-name descname"><span class="pre">api_lock</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;unlocked</span> <span class="pre">_thread.lock</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#ex_installer.git_client.ThreadedGitClient.api_lock" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.manage_cli">
-<span class="sig-name descname"><span class="pre">manage_cli</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.manage_cli" title="Link to this definition"></a></dt>
-<dd><p>Manage the Arduino CLI</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.not_installed_text">
-<span class="sig-name descname"><span class="pre">not_installed_text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'The</span> <span class="pre">Arduino</span> <span class="pre">CLI</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">installed'</span></em><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.not_installed_text" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.refresh_instruction_text">
-<span class="sig-name descname"><span class="pre">refresh_instruction_text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'While</span> <span class="pre">the</span> <span class="pre">Arduino</span> <span class="pre">CLI</span> <span class="pre">is</span> <span class="pre">installed,</span> <span class="pre">it</span> <span class="pre">is</span> <span class="pre">recommended</span> <span class="pre">to</span> <span class="pre">refresh</span> <span class="pre">it</span> <span class="pre">periodically</span> <span class="pre">(eg.</span> <span class="pre">weekly)</span> <span class="pre">to</span> <span class="pre">ensure</span> <span class="pre">support</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">various</span> <span class="pre">devices</span> <span class="pre">is</span> <span class="pre">kept</span> <span class="pre">up</span> <span class="pre">to</span> <span class="pre">date.</span> <span class="pre">To</span> <span class="pre">refresh</span> <span class="pre">the</span> <span class="pre">CLI,</span> <span class="pre">simply</span> <span class="pre">click</span> <span class="pre">the</span> <span class="pre">refresh</span> <span class="pre">button.\n\nNote</span> <span class="pre">that</span> <span class="pre">enabling</span> <span class="pre">any</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">additional</span> <span class="pre">platforms</span> <span class="pre">is</span> <span class="pre">likely</span> <span class="pre">to</span> <span class="pre">add</span> <span class="pre">several</span> <span class="pre">minutes</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">refresh</span> <span class="pre">process.</span> <span class="pre">Maybe</span> <span class="pre">grab</span> <span class="pre">a</span> <span class="pre">cup</span> <span class="pre">of</span> <span class="pre">tea</span> <span class="pre">or</span> <span class="pre">a</span> <span class="pre">coffee!'</span></em><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.refresh_instruction_text" title="Link to this definition"></a></dt>
-<dd><p>Class for the Manage Arduino CLI view</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.set_state">
-<span class="sig-name descname"><span class="pre">set_state</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.set_state" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.manage_arduino_cli.ManageArduinoCLI.update_package_list">
-<span class="sig-name descname"><span class="pre">update_package_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">switch</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.update_package_list" title="Link to this definition"></a></dt>
-<dd><p>Maintain the list of packages to install/refresh when switches updated</p>
+<dt class="sig sig-object py" id="ex_installer.git_client.ThreadedGitClient.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.git_client.ThreadedGitClient.run" title="Link to this definition"></a></dt>
+<dd><p>Method representing the thread’s activity.</p>
+<p>You may override this method in a subclass. The standard run() method
+invokes the callable object passed to the object’s constructor as the
+target argument, if any, with sequential and keyword arguments taken
+from the args and kwargs arguments, respectively.</p>
 </dd></dl>
 
 </dd></dl>
 
-</section>
-<hr class="docutils" />
-<section id="select-device">
-<h2>select_device<a class="headerlink" href="#select-device" title="Link to this heading"></a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="ex_installer.select_device.SelectDevice">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.select_device.</span></span><span class="sig-name descname"><span class="pre">SelectDevice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_device.SelectDevice" title="Link to this definition"></a></dt>
-<dd><p>Class for the Select Device view</p>
+<dt class="sig sig-object py" id="ex_installer.git_client.GitClient">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.git_client.</span></span><span class="sig-name descname"><span class="pre">GitClient</span></span><a class="headerlink" href="#ex_installer.git_client.GitClient" title="Link to this definition"></a></dt>
+<dd><p>Class for cloning code and selecting specific versions from DCC-EX repositories</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_device.SelectDevice.get_port_description">
-<span class="sig-name descname"><span class="pre">get_port_description</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">unknown_port</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_device.SelectDevice.get_port_description" title="Link to this definition"></a></dt>
-<dd><p>Function to obtain USB/serial port descriptions using pyserial for ports the CLI doesn’t identify</p>
+<dt class="sig sig-object py" id="ex_installer.git_client.GitClient.check_local_changes">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">check_local_changes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repo</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.git_client.GitClient.check_local_changes" title="Link to this definition"></a></dt>
+<dd><p>Function to check for local changes to files in the provided repo</p>
+<p>If file “.DS_Store” is added/modified, this is forcefully discarded as it should be in .gitignore</p>
+<p>Returns False (no changes) or a list of changed files</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.git_client.GitClient.clone_repo">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">clone_repo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repo_url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repo_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.git_client.GitClient.clone_repo" title="Link to this definition"></a></dt>
+<dd><p>Clone a remote repo using a separate thread</p>
+<p>Returns the repo instance in queue data if successful</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.git_client.GitClient.dir_is_git_repo">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dir_is_git_repo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.git_client.GitClient.dir_is_git_repo" title="Link to this definition"></a></dt>
+<dd><p>Check if directory exists and contains a .git file</p>
+<p>Returns True if so, False if not</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.git_client.GitClient.extract_version_details">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extract_version_details</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">version_string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.git_client.GitClient.extract_version_details" title="Link to this definition"></a></dt>
+<dd><p>Extracts major, minor, and patch versions from a GitHub tag style version string</p>
+<p>Returns a tuple (major, minor, patch) or None</p>
+<p>version_string must match a GitHub version style tag to work
+vX.Y.Z-Prod|Devel</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.git_client.GitClient.get_branch_ref">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_branch_ref</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.git_client.GitClient.get_branch_ref" title="Link to this definition"></a></dt>
+<dd><p>Gets the ref for the named branch</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.git_client.GitClient.get_latest_devel">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_latest_devel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Devel'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.git_client.GitClient.get_latest_devel" title="Link to this definition"></a></dt>
+<dd><p>Retrieves the latest Development tagged version from the repo</p>
+<p>If no tags or no Devel tags, returns False</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.git_client.GitClient.get_latest_prod">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_latest_prod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Prod'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.git_client.GitClient.get_latest_prod" title="Link to this definition"></a></dt>
+<dd><p>Retrieves the latest Production tagged version from the repo</p>
+<p>If no tags or no Prod tags, returns False</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.git_client.GitClient.get_repo">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_repo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repo_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.git_client.GitClient.get_repo" title="Link to this definition"></a></dt>
+<dd><p>Validate the provided directory is a repo</p>
+<p>Returns a tuple of (True|False, None|message)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.git_client.GitClient.get_repo_versions">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_repo_versions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repo</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.git_client.GitClient.get_repo_versions" title="Link to this definition"></a></dt>
+<dd><p>Gets all version tags from the specified repo</p>
+<p>Returns either an ordered dictionary (descending) or False if there are no tags</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.git_client.GitClient.git_hard_reset">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">git_hard_reset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repo</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.git_client.GitClient.git_hard_reset" title="Link to this definition"></a></dt>
+<dd><p>Performs a hard reset of the provided repository to the current HEAD</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="ex_installer.select_device.SelectDevice.instruction_text">
-<span class="sig-name descname"><span class="pre">instruction_text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&quot;Ensure</span> <span class="pre">your</span> <span class="pre">Arduino</span> <span class="pre">device</span> <span class="pre">is</span> <span class="pre">connected</span> <span class="pre">to</span> <span class="pre">your</span> <span class="pre">computer's</span> <span class="pre">USB</span> <span class="pre">port.\n\nIf</span> <span class="pre">the</span> <span class="pre">device</span> <span class="pre">detected</span> <span class="pre">matches</span> <span class="pre">multiple</span> <span class="pre">devices,</span> <span class="pre">select</span> <span class="pre">the</span> <span class="pre">correct</span> <span class="pre">one</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">pulldown</span> <span class="pre">list</span> <span class="pre">provided.\n\nIf</span> <span class="pre">you</span> <span class="pre">have</span> <span class="pre">a</span> <span class="pre">generic</span> <span class="pre">or</span> <span class="pre">clone</span> <span class="pre">device,</span> <span class="pre">it</span> <span class="pre">likely</span> <span class="pre">appears</span> <span class="pre">as</span> <span class="pre">“Unknown”.</span> <span class="pre">In</span> <span class="pre">this</span> <span class="pre">instance,</span> <span class="pre">you</span> <span class="pre">will</span> <span class="pre">need</span> <span class="pre">to</span> <span class="pre">select</span> <span class="pre">the</span> <span class="pre">appropriate</span> <span class="pre">device</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">pulldown</span> <span class="pre">list</span> <span class="pre">provided.&quot;</span></em><a class="headerlink" href="#ex_installer.select_device.SelectDevice.instruction_text" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="ex_installer.git_client.GitClient.log">
+<span class="sig-name descname"><span class="pre">log</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;Logger</span> <span class="pre">ex_installer.git_client</span> <span class="pre">(WARNING)&gt;</span></em><a class="headerlink" href="#ex_installer.git_client.GitClient.log" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_device.SelectDevice.list_devices">
-<span class="sig-name descname"><span class="pre">list_devices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_device.SelectDevice.list_devices" title="Link to this definition"></a></dt>
-<dd><p>Use the Arduino CLI to list attached devices</p>
+<dt class="sig sig-object py" id="ex_installer.git_client.GitClient.pull">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pull</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remote_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'origin'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">branch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'master'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.git_client.GitClient.pull" title="Link to this definition"></a></dt>
+<dd><p>Function to pull the latest updates from the provided repo</p>
+<p>Expects a pygit2 repo object and a branch name</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_device.SelectDevice.select_device">
-<span class="sig-name descname"><span class="pre">select_device</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_device.SelectDevice.select_device" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_device.SelectDevice.set_state">
-<span class="sig-name descname"><span class="pre">set_state</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_device.SelectDevice.set_state" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_device.SelectDevice.update_board">
-<span class="sig-name descname"><span class="pre">update_board</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_device.SelectDevice.update_board" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="ex_installer.git_client.GitClient.pull_latest">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pull_latest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">branch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.git_client.GitClient.pull_latest" title="Link to this definition"></a></dt>
+<dd><p>Pull latest updates from a repo</p>
+<p>Threaded version of pull</p>
+<p>Requires a pygit2 repo object and a branch name</p>
+</dd></dl>
 
 </dd></dl>
 
-</section>
 <hr class="docutils" />
-<section id="select-product">
-<h2>select_product<a class="headerlink" href="#select-product" title="Link to this heading"></a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="ex_installer.select_product.SelectProduct">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.select_product.</span></span><span class="sig-name descname"><span class="pre">SelectProduct</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_product.SelectProduct" title="Link to this definition"></a></dt>
-<dd><p>Class for the Select Product view</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_product.SelectProduct.check_product_device">
-<span class="sig-name descname"><span class="pre">check_product_device</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_product.SelectProduct.check_product_device" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-</section>
-<hr class="docutils" />
-<section id="select-version-config">
-<h2>select_version_config<a class="headerlink" href="#select-version-config" title="Link to this heading"></a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.select_version_config.</span></span><span class="sig-name descname"><span class="pre">SelectVersionConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig" title="Link to this definition"></a></dt>
-<dd><p>Class for selecting the version and config directory</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.browse_configdir">
-<span class="sig-name descname"><span class="pre">browse_configdir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.browse_configdir" title="Link to this definition"></a></dt>
-<dd><p>Opens a file browser dialogue to allow user to select a config file to use</p>
-<p>Uses directory of this file to set the config directory</p>
-<p>This is a workaround for “askdirectory()” not showing files, which is confusing for users</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.copy_config_files">
-<span class="sig-name descname"><span class="pre">copy_config_files</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.copy_config_files" title="Link to this definition"></a></dt>
-<dd><dl class="simple">
-<dt>Function to copy config files from selected directory to product directory</dt><dd><p>also switches view to advanced_config if copy is successful</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.delete_config_files">
-<span class="sig-name descname"><span class="pre">delete_config_files</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.delete_config_files" title="Link to this definition"></a></dt>
-<dd><dl class="simple">
-<dt>Function to delete config files from product directory</dt><dd><p>needed on subsequent passes thru the logic</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.resolve_local_changes">
-<span class="sig-name descname"><span class="pre">resolve_local_changes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">changes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.resolve_local_changes" title="Link to this definition"></a></dt>
-<dd><p>Function to prompt the user to resolve locally detected repository changes</p>
-<p>Resolution means perforing a git hard reset, cancel means exiting the app</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.set_next_config">
-<span class="sig-name descname"><span class="pre">set_next_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.set_next_config" title="Link to this definition"></a></dt>
-<dd><p>Function to select what configuration to do next</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.set_product">
-<span class="sig-name descname"><span class="pre">set_product</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.set_product" title="Link to this definition"></a></dt>
-<dd><p>Function to set the product details to manage the repository</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.set_select_version">
-<span class="sig-name descname"><span class="pre">set_select_version</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.set_select_version" title="Link to this definition"></a></dt>
-<dd><p>Function to set select a specific version when setting via combobox</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.set_version">
-<span class="sig-name descname"><span class="pre">set_version</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.set_version" title="Link to this definition"></a></dt>
-<dd><p>Function to checkout the selected version according to the radio buttons</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.set_versions">
-<span class="sig-name descname"><span class="pre">set_versions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repo</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.set_versions" title="Link to this definition"></a></dt>
-<dd><p>Function to obtain versions available in the repo</p>
-<p>Once versions obtained, set appropriately</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.setup_local_repo">
-<span class="sig-name descname"><span class="pre">setup_local_repo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.setup_local_repo" title="Link to this definition"></a></dt>
-<dd><p>Function to setup the local repository</p>
-<p>Process:
-- check if the product directory already exists
-- if so</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>if the product directory is already a cloned repo</p></li>
-<li><p>any locally modified files that would interfere with Git commands (prompt to resolve)</p></li>
-<li><p>delete any existing configuration files</p></li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li><p>if not, clone repo</p></li>
-<li><p>get list of versions, latest prod, and latest devel versions</p></li>
-</ul>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.setup_version_frame">
-<span class="sig-name descname"><span class="pre">setup_version_frame</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.setup_version_frame" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.validate_config_dir">
-<span class="sig-name descname"><span class="pre">validate_config_dir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.validate_config_dir" title="Link to this definition"></a></dt>
-<dd><p>Function to validate the selected directory for config files:</p>
-<ul class="simple">
-<li><p>Is a valid directory</p></li>
-<li><p>Contains at least the specified minimum config files</p></li>
-</ul>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.version_text">
-<span class="sig-name descname"><span class="pre">version_text</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&quot;For</span> <span class="pre">most</span> <span class="pre">users</span> <span class="pre">we</span> <span class="pre">recommend</span> <span class="pre">staying</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">latest</span> <span class="pre">Production</span> <span class="pre">release,</span> <span class="pre">however</span> <span class="pre">you</span> <span class="pre">can</span> <span class="pre">install</span> <span class="pre">other</span> <span class="pre">versions</span> <span class="pre">if</span> <span class="pre">you</span> <span class="pre">know</span> <span class="pre">what</span> <span class="pre">you're</span> <span class="pre">doing,</span> <span class="pre">or</span> <span class="pre">if</span> <span class="pre">a</span> <span class="pre">version</span> <span class="pre">has</span> <span class="pre">been</span> <span class="pre">suggested</span> <span class="pre">by</span> <span class="pre">the</span> <span class="pre">DCC-EX</span> <span class="pre">team.&quot;</span></em><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.version_text" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-</section>
-<hr class="docutils" />
-<section id="serial-monitor">
-<h2>serial_monitor<a class="headerlink" href="#serial-monitor" title="Link to this heading"></a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.serial_monitor.</span></span><span class="sig-name descname"><span class="pre">SerialMonitor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor" title="Link to this definition"></a></dt>
-<dd><p>Class to define a window for the serial monitor</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.browse_log_dir">
-<span class="sig-name descname"><span class="pre">browse_log_dir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.browse_log_dir" title="Link to this definition"></a></dt>
-<dd><p>Opens a directory browser dialogue to select the folder to save the device log to</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.close_monitor">
-<span class="sig-name descname"><span class="pre">close_monitor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.close_monitor" title="Link to this definition"></a></dt>
-<dd><p>Close the monitor window nicely:</p>
-<ul class="simple">
-<li><p>If serial port open, close it</p></li>
-<li><p>If thread running, join/end it</p></li>
-<li><p>Destroy this object</p></li>
-</ul>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.exception_handler">
-<span class="sig-name descname"><span class="pre">exception_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exc_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_traceback</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.exception_handler" title="Link to this definition"></a></dt>
-<dd><p>Handler for uncaught exceptions</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.monitor">
-<span class="sig-name descname"><span class="pre">monitor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.monitor" title="Link to this definition"></a></dt>
-<dd><p>Function to monitoring using PySerial</p>
-<p>Starts the process, and then creates a thread to read the output continuously</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.read_output">
-<span class="sig-name descname"><span class="pre">read_output</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.read_output" title="Link to this definition"></a></dt>
-<dd><p>Function to read serial output</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.save_log_file">
-<span class="sig-name descname"><span class="pre">save_log_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.save_log_file" title="Link to this definition"></a></dt>
-<dd><p>Function to save the device log file to the chosen location, and open it</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.send_command">
-<span class="sig-name descname"><span class="pre">send_command</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.send_command" title="Link to this definition"></a></dt>
-<dd><p>Function to send a command to the serial port</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.show_save_log_popup">
-<span class="sig-name descname"><span class="pre">show_save_log_popup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.show_save_log_popup" title="Link to this definition"></a></dt>
-<dd><p>Function to show the message box to select the folder to save device log</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.serial_monitor.SerialMonitor.update_textbox">
-<span class="sig-name descname"><span class="pre">update_textbox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.serial_monitor.SerialMonitor.update_textbox" title="Link to this definition"></a></dt>
-<dd><p>Function to update the textbox with output from the Arduino CLI in monitor mode</p>
-</dd></dl>
-
-</dd></dl>
-
 </section>
 </section>
 
