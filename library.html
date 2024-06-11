@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Library &mdash; EX-Installer  documentation</title>
+  <title>Code Library &mdash; EX-Installer  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/css/dccex_theme.css?v=2ceefcef" />
@@ -54,7 +54,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="index.html">EX-Installer</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Library</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Code Library</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#welcome">welcome</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#ex_installer.welcome.Welcome"><code class="docutils literal notranslate"><span class="pre">Welcome</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#ex_installer.welcome.Welcome.set_text"><code class="docutils literal notranslate"><span class="pre">Welcome.set_text()</span></code></a></li>
@@ -216,37 +216,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#file-manager">file_manager</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ex_installer.file_manager.ThreadedDownloader"><code class="docutils literal notranslate"><span class="pre">ThreadedDownloader</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.ThreadedDownloader.download_lock"><code class="docutils literal notranslate"><span class="pre">ThreadedDownloader.download_lock</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.ThreadedDownloader.run"><code class="docutils literal notranslate"><span class="pre">ThreadedDownloader.run()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#ex_installer.file_manager.ThreadedExtractor"><code class="docutils literal notranslate"><span class="pre">ThreadedExtractor</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.ThreadedExtractor.extractor_lock"><code class="docutils literal notranslate"><span class="pre">ThreadedExtractor.extractor_lock</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.ThreadedExtractor.run"><code class="docutils literal notranslate"><span class="pre">ThreadedExtractor.run()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#ex_installer.file_manager.FileManager"><code class="docutils literal notranslate"><span class="pre">FileManager</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager.copy_config_files"><code class="docutils literal notranslate"><span class="pre">FileManager.copy_config_files()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager.delete_config_files"><code class="docutils literal notranslate"><span class="pre">FileManager.delete_config_files()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager.dir_is_empty"><code class="docutils literal notranslate"><span class="pre">FileManager.dir_is_empty()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager.get_base_dir"><code class="docutils literal notranslate"><span class="pre">FileManager.get_base_dir()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager.get_config_files"><code class="docutils literal notranslate"><span class="pre">FileManager.get_config_files()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager.get_filepath"><code class="docutils literal notranslate"><span class="pre">FileManager.get_filepath()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager.get_install_dir"><code class="docutils literal notranslate"><span class="pre">FileManager.get_install_dir()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager.get_list_from_file"><code class="docutils literal notranslate"><span class="pre">FileManager.get_list_from_file()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager.get_temp_dir"><code class="docutils literal notranslate"><span class="pre">FileManager.get_temp_dir()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager.is_valid_dir"><code class="docutils literal notranslate"><span class="pre">FileManager.is_valid_dir()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager.log"><code class="docutils literal notranslate"><span class="pre">FileManager.log</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager.read_config_file"><code class="docutils literal notranslate"><span class="pre">FileManager.read_config_file()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager.read_version"><code class="docutils literal notranslate"><span class="pre">FileManager.read_version()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager.rename_dir"><code class="docutils literal notranslate"><span class="pre">FileManager.rename_dir()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager.write_config_file"><code class="docutils literal notranslate"><span class="pre">FileManager.write_config_file()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="#advanced-config">advanced_config</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#ex_installer.advanced_config.AdvancedConfig"><code class="docutils literal notranslate"><span class="pre">AdvancedConfig</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#ex_installer.advanced_config.AdvancedConfig.reload_view"><code class="docutils literal notranslate"><span class="pre">AdvancedConfig.reload_view()</span></code></a></li>
@@ -285,59 +254,93 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#common-fonts">common_fonts</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ex_installer.common_fonts.CommonFonts"><code class="docutils literal notranslate"><span class="pre">CommonFonts</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_fonts.CommonFonts.default_font"><code class="docutils literal notranslate"><span class="pre">CommonFonts.default_font</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#utility">Utility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#file-manager">file_manager</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.ThreadedDownloader"><code class="docutils literal notranslate"><span class="pre">ThreadedDownloader</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.ThreadedDownloader.download_lock"><code class="docutils literal notranslate"><span class="pre">ThreadedDownloader.download_lock</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.ThreadedDownloader.run"><code class="docutils literal notranslate"><span class="pre">ThreadedDownloader.run()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.ThreadedExtractor"><code class="docutils literal notranslate"><span class="pre">ThreadedExtractor</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.ThreadedExtractor.extractor_lock"><code class="docutils literal notranslate"><span class="pre">ThreadedExtractor.extractor_lock</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.ThreadedExtractor.run"><code class="docutils literal notranslate"><span class="pre">ThreadedExtractor.run()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.file_manager.FileManager"><code class="docutils literal notranslate"><span class="pre">FileManager</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.FileManager.copy_config_files"><code class="docutils literal notranslate"><span class="pre">FileManager.copy_config_files()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.FileManager.delete_config_files"><code class="docutils literal notranslate"><span class="pre">FileManager.delete_config_files()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.FileManager.dir_is_empty"><code class="docutils literal notranslate"><span class="pre">FileManager.dir_is_empty()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.FileManager.get_base_dir"><code class="docutils literal notranslate"><span class="pre">FileManager.get_base_dir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.FileManager.get_config_files"><code class="docutils literal notranslate"><span class="pre">FileManager.get_config_files()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.FileManager.get_filepath"><code class="docutils literal notranslate"><span class="pre">FileManager.get_filepath()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.FileManager.get_install_dir"><code class="docutils literal notranslate"><span class="pre">FileManager.get_install_dir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.FileManager.get_list_from_file"><code class="docutils literal notranslate"><span class="pre">FileManager.get_list_from_file()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.FileManager.get_temp_dir"><code class="docutils literal notranslate"><span class="pre">FileManager.get_temp_dir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.FileManager.is_valid_dir"><code class="docutils literal notranslate"><span class="pre">FileManager.is_valid_dir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.FileManager.log"><code class="docutils literal notranslate"><span class="pre">FileManager.log</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.FileManager.read_config_file"><code class="docutils literal notranslate"><span class="pre">FileManager.read_config_file()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.FileManager.read_version"><code class="docutils literal notranslate"><span class="pre">FileManager.read_version()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.FileManager.rename_dir"><code class="docutils literal notranslate"><span class="pre">FileManager.rename_dir()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.file_manager.FileManager.write_config_file"><code class="docutils literal notranslate"><span class="pre">FileManager.write_config_file()</span></code></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#common-widgets">common_widgets</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout"><code class="docutils literal notranslate"><span class="pre">WindowLayout</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.disable_input_states"><code class="docutils literal notranslate"><span class="pre">WindowLayout.disable_input_states()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.get_exception"><code class="docutils literal notranslate"><span class="pre">WindowLayout.get_exception()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.monitor_queue"><code class="docutils literal notranslate"><span class="pre">WindowLayout.monitor_queue()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.process_error"><code class="docutils literal notranslate"><span class="pre">WindowLayout.process_error()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.process_start"><code class="docutils literal notranslate"><span class="pre">WindowLayout.process_start()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.process_stop"><code class="docutils literal notranslate"><span class="pre">WindowLayout.process_stop()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.restore_input_states"><code class="docutils literal notranslate"><span class="pre">WindowLayout.restore_input_states()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.set_title_logo"><code class="docutils literal notranslate"><span class="pre">WindowLayout.set_title_logo()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.set_title_text"><code class="docutils literal notranslate"><span class="pre">WindowLayout.set_title_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#common-fonts">common_fonts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_fonts.CommonFonts"><code class="docutils literal notranslate"><span class="pre">CommonFonts</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_fonts.CommonFonts.default_font"><code class="docutils literal notranslate"><span class="pre">CommonFonts.default_font</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#ex_installer.common_widgets.NextBack"><code class="docutils literal notranslate"><span class="pre">NextBack</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.disable_back"><code class="docutils literal notranslate"><span class="pre">NextBack.disable_back()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.disable_next"><code class="docutils literal notranslate"><span class="pre">NextBack.disable_next()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.enable_back"><code class="docutils literal notranslate"><span class="pre">NextBack.enable_back()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.enable_next"><code class="docutils literal notranslate"><span class="pre">NextBack.enable_next()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.hide_back"><code class="docutils literal notranslate"><span class="pre">NextBack.hide_back()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.hide_log_button"><code class="docutils literal notranslate"><span class="pre">NextBack.hide_log_button()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.hide_monitor_button"><code class="docutils literal notranslate"><span class="pre">NextBack.hide_monitor_button()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.hide_next"><code class="docutils literal notranslate"><span class="pre">NextBack.hide_next()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.monitor"><code class="docutils literal notranslate"><span class="pre">NextBack.monitor()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.set_back_command"><code class="docutils literal notranslate"><span class="pre">NextBack.set_back_command()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.set_back_text"><code class="docutils literal notranslate"><span class="pre">NextBack.set_back_text()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.set_next_command"><code class="docutils literal notranslate"><span class="pre">NextBack.set_next_command()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.set_next_text"><code class="docutils literal notranslate"><span class="pre">NextBack.set_next_text()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.show_back"><code class="docutils literal notranslate"><span class="pre">NextBack.show_back()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.show_log"><code class="docutils literal notranslate"><span class="pre">NextBack.show_log()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.show_log_button"><code class="docutils literal notranslate"><span class="pre">NextBack.show_log_button()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.show_monitor_button"><code class="docutils literal notranslate"><span class="pre">NextBack.show_monitor_button()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.show_next"><code class="docutils literal notranslate"><span class="pre">NextBack.show_next()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#ex_installer.common_widgets.FormattedTextbox"><code class="docutils literal notranslate"><span class="pre">FormattedTextbox</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.FormattedTextbox.insert_bullet"><code class="docutils literal notranslate"><span class="pre">FormattedTextbox.insert_bullet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#common-widgets">common_widgets</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout"><code class="docutils literal notranslate"><span class="pre">WindowLayout</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.disable_input_states"><code class="docutils literal notranslate"><span class="pre">WindowLayout.disable_input_states()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.get_exception"><code class="docutils literal notranslate"><span class="pre">WindowLayout.get_exception()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.monitor_queue"><code class="docutils literal notranslate"><span class="pre">WindowLayout.monitor_queue()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.process_error"><code class="docutils literal notranslate"><span class="pre">WindowLayout.process_error()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.process_start"><code class="docutils literal notranslate"><span class="pre">WindowLayout.process_start()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.process_stop"><code class="docutils literal notranslate"><span class="pre">WindowLayout.process_stop()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.restore_input_states"><code class="docutils literal notranslate"><span class="pre">WindowLayout.restore_input_states()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.set_title_logo"><code class="docutils literal notranslate"><span class="pre">WindowLayout.set_title_logo()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.WindowLayout.set_title_text"><code class="docutils literal notranslate"><span class="pre">WindowLayout.set_title_text()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip"><code class="docutils literal notranslate"><span class="pre">CreateToolTip</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip.enter_widget"><code class="docutils literal notranslate"><span class="pre">CreateToolTip.enter_widget()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip.hide_tooltip"><code class="docutils literal notranslate"><span class="pre">CreateToolTip.hide_tooltip()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip.leave_widget"><code class="docutils literal notranslate"><span class="pre">CreateToolTip.leave_widget()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip.open_url"><code class="docutils literal notranslate"><span class="pre">CreateToolTip.open_url()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip.schedule_tooltip"><code class="docutils literal notranslate"><span class="pre">CreateToolTip.schedule_tooltip()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip.show_tooltip"><code class="docutils literal notranslate"><span class="pre">CreateToolTip.show_tooltip()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip.unschedule_tooltip"><code class="docutils literal notranslate"><span class="pre">CreateToolTip.unschedule_tooltip()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.NextBack"><code class="docutils literal notranslate"><span class="pre">NextBack</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.disable_back"><code class="docutils literal notranslate"><span class="pre">NextBack.disable_back()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.disable_next"><code class="docutils literal notranslate"><span class="pre">NextBack.disable_next()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.enable_back"><code class="docutils literal notranslate"><span class="pre">NextBack.enable_back()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.enable_next"><code class="docutils literal notranslate"><span class="pre">NextBack.enable_next()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.hide_back"><code class="docutils literal notranslate"><span class="pre">NextBack.hide_back()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.hide_log_button"><code class="docutils literal notranslate"><span class="pre">NextBack.hide_log_button()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.hide_monitor_button"><code class="docutils literal notranslate"><span class="pre">NextBack.hide_monitor_button()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.hide_next"><code class="docutils literal notranslate"><span class="pre">NextBack.hide_next()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.monitor"><code class="docutils literal notranslate"><span class="pre">NextBack.monitor()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.set_back_command"><code class="docutils literal notranslate"><span class="pre">NextBack.set_back_command()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.set_back_text"><code class="docutils literal notranslate"><span class="pre">NextBack.set_back_text()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.set_next_command"><code class="docutils literal notranslate"><span class="pre">NextBack.set_next_command()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.set_next_text"><code class="docutils literal notranslate"><span class="pre">NextBack.set_next_text()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.show_back"><code class="docutils literal notranslate"><span class="pre">NextBack.show_back()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.show_log"><code class="docutils literal notranslate"><span class="pre">NextBack.show_log()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.show_log_button"><code class="docutils literal notranslate"><span class="pre">NextBack.show_log_button()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.show_monitor_button"><code class="docutils literal notranslate"><span class="pre">NextBack.show_monitor_button()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.NextBack.show_next"><code class="docutils literal notranslate"><span class="pre">NextBack.show_next()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.FormattedTextbox"><code class="docutils literal notranslate"><span class="pre">FormattedTextbox</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.FormattedTextbox.insert_bullet"><code class="docutils literal notranslate"><span class="pre">FormattedTextbox.insert_bullet()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip"><code class="docutils literal notranslate"><span class="pre">CreateToolTip</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip.enter_widget"><code class="docutils literal notranslate"><span class="pre">CreateToolTip.enter_widget()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip.hide_tooltip"><code class="docutils literal notranslate"><span class="pre">CreateToolTip.hide_tooltip()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip.leave_widget"><code class="docutils literal notranslate"><span class="pre">CreateToolTip.leave_widget()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip.open_url"><code class="docutils literal notranslate"><span class="pre">CreateToolTip.open_url()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip.schedule_tooltip"><code class="docutils literal notranslate"><span class="pre">CreateToolTip.schedule_tooltip()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip.show_tooltip"><code class="docutils literal notranslate"><span class="pre">CreateToolTip.show_tooltip()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ex_installer.common_widgets.CreateToolTip.unschedule_tooltip"><code class="docutils literal notranslate"><span class="pre">CreateToolTip.unschedule_tooltip()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -384,7 +387,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Library</li>
+      <li class="breadcrumb-item active">Code Library</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/DCC-EX/EX-Installer/blob/sphinx/docs/library.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -394,8 +397,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="library">
-<h1>Library<a class="headerlink" href="#library" title="Link to this heading"></a></h1>
+  <section id="code-library">
+<h1>Code Library<a class="headerlink" href="#code-library" title="Link to this heading"></a></h1>
 <hr class="docutils" id="reference-db-database" />
 <section id="welcome">
 <h2>welcome<a class="headerlink" href="#welcome" title="Link to this heading"></a></h2>
@@ -1196,160 +1199,6 @@ else:
 
 </section>
 <hr class="docutils" />
-<section id="file-manager">
-<h2>file_manager<a class="headerlink" href="#file-manager" title="Link to this heading"></a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="ex_installer.file_manager.ThreadedDownloader">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.file_manager.</span></span><span class="sig-name descname"><span class="pre">ThreadedDownloader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.ThreadedDownloader" title="Link to this definition"></a></dt>
-<dd><dl class="py attribute">
-<dt class="sig sig-object py" id="ex_installer.file_manager.ThreadedDownloader.download_lock">
-<span class="sig-name descname"><span class="pre">download_lock</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;unlocked</span> <span class="pre">_thread.lock</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#ex_installer.file_manager.ThreadedDownloader.download_lock" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.ThreadedDownloader.run">
-<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.ThreadedDownloader.run" title="Link to this definition"></a></dt>
-<dd><p>Method representing the thread’s activity.</p>
-<p>You may override this method in a subclass. The standard run() method
-invokes the callable object passed to the object’s constructor as the
-target argument, if any, with sequential and keyword arguments taken
-from the args and kwargs arguments, respectively.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="ex_installer.file_manager.ThreadedExtractor">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.file_manager.</span></span><span class="sig-name descname"><span class="pre">ThreadedExtractor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">archive_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.ThreadedExtractor" title="Link to this definition"></a></dt>
-<dd><dl class="py attribute">
-<dt class="sig sig-object py" id="ex_installer.file_manager.ThreadedExtractor.extractor_lock">
-<span class="sig-name descname"><span class="pre">extractor_lock</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;unlocked</span> <span class="pre">_thread.lock</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#ex_installer.file_manager.ThreadedExtractor.extractor_lock" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.ThreadedExtractor.run">
-<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.ThreadedExtractor.run" title="Link to this definition"></a></dt>
-<dd><p>Method representing the thread’s activity.</p>
-<p>You may override this method in a subclass. The standard run() method
-invokes the callable object passed to the object’s constructor as the
-target argument, if any, with sequential and keyword arguments taken
-from the args and kwargs arguments, respectively.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.file_manager.</span></span><span class="sig-name descname"><span class="pre">FileManager</span></span><a class="headerlink" href="#ex_installer.file_manager.FileManager" title="Link to this definition"></a></dt>
-<dd><p>Class for managing files and directories</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.copy_config_files">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">copy_config_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.copy_config_files" title="Link to this definition"></a></dt>
-<dd><p>Copy the specified list of files from source to destination directory</p>
-<p>Returns None if successful, otherwise a list of files that failed to copy</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.delete_config_files">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">delete_config_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.delete_config_files" title="Link to this definition"></a></dt>
-<dd><p>Delete the specified list of files from sepcified directory</p>
-<p>Returns None if successful, otherwise a list of files that failed to copy</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.dir_is_empty">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dir_is_empty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.dir_is_empty" title="Link to this definition"></a></dt>
-<dd><p>Check if directory is empty</p>
-<p>Returns True if so, False if not</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.get_base_dir">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_base_dir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.get_base_dir" title="Link to this definition"></a></dt>
-<dd><p>Returns the base directory for EX-Installer</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.get_config_files">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_config_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pattern_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.get_config_files" title="Link to this definition"></a></dt>
-<dd><p>Function to check for the existence of existing configuration files</p>
-<p>Returns False if no files, otherwise a list of file names matching the provided list of patterns</p>
-<p>Pattern list can contain either:
-- a valid Python regular expression with grouping, where a match is made on one group only (group 1)
-- a file name</p>
-<p>This is a valid example of a pattern: r”^my.*.[^?]*example.h$|(^my.*.h$)”  # noqa: W605
-This is an invalid example of a pattern: r”^config.h$”  # noqa: W605
-This would be valid, but better to just provide filename: r”^(config.h)$”  # noqa: W605</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.get_filepath">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_filepath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.get_filepath" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.get_install_dir">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_install_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.get_install_dir" title="Link to this definition"></a></dt>
-<dd><p>Returns the path to extract software into</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.get_list_from_file">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_list_from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.get_list_from_file" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.get_temp_dir">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_temp_dir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.get_temp_dir" title="Link to this definition"></a></dt>
-<dd><p>Returns the temp directory</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.is_valid_dir">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_valid_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.is_valid_dir" title="Link to this definition"></a></dt>
-<dd><p>Simply checks directory exists and that it is a directory</p>
-<p>Returns True or False</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.log">
-<span class="sig-name descname"><span class="pre">log</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;Logger</span> <span class="pre">ex_installer.file_manager</span> <span class="pre">(WARNING)&gt;</span></em><a class="headerlink" href="#ex_installer.file_manager.FileManager.log" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.read_config_file">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">read_config_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.read_config_file" title="Link to this definition"></a></dt>
-<dd><p>Function to read and return file contents
-Pass the full path to the file
-Returns the text from the file path if successful, otherwise the exception error message</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.read_version">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">read_version</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">version_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.read_version" title="Link to this definition"></a></dt>
-<dd><p>Function to read a version string from a file</p>
-<p>Not recommended over obtaining versions from GitHub tags, however can be used if those are not defined
-Returns False if no version defined, or a string containing the version</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.rename_dir">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rename_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.rename_dir" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.write_config_file">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">write_config_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contents</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.write_config_file" title="Link to this definition"></a></dt>
-<dd><p>Function to write the list of contents to a config file</p>
-<p>Pass the full path to the file and the list of lines to write
-Writes utf-8 encoded</p>
-<p>Returns the same file path if successful, otherwise the exception error message</p>
-</dd></dl>
-
-</dd></dl>
-
-</section>
-<hr class="docutils" />
 <section id="advanced-config">
 <h2>advanced_config<a class="headerlink" href="#advanced-config" title="Link to this heading"></a></h2>
 <dl class="py class">
@@ -1545,8 +1394,164 @@ they will be terminated</p>
 
 </section>
 <hr class="docutils" />
+<section id="utility">
+<h2>Utility<a class="headerlink" href="#utility" title="Link to this heading"></a></h2>
+<section id="file-manager">
+<h3>file_manager<a class="headerlink" href="#file-manager" title="Link to this heading"></a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="ex_installer.file_manager.ThreadedDownloader">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.file_manager.</span></span><span class="sig-name descname"><span class="pre">ThreadedDownloader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.ThreadedDownloader" title="Link to this definition"></a></dt>
+<dd><dl class="py attribute">
+<dt class="sig sig-object py" id="ex_installer.file_manager.ThreadedDownloader.download_lock">
+<span class="sig-name descname"><span class="pre">download_lock</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;unlocked</span> <span class="pre">_thread.lock</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#ex_installer.file_manager.ThreadedDownloader.download_lock" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.ThreadedDownloader.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.ThreadedDownloader.run" title="Link to this definition"></a></dt>
+<dd><p>Method representing the thread’s activity.</p>
+<p>You may override this method in a subclass. The standard run() method
+invokes the callable object passed to the object’s constructor as the
+target argument, if any, with sequential and keyword arguments taken
+from the args and kwargs arguments, respectively.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ex_installer.file_manager.ThreadedExtractor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.file_manager.</span></span><span class="sig-name descname"><span class="pre">ThreadedExtractor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">archive_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.ThreadedExtractor" title="Link to this definition"></a></dt>
+<dd><dl class="py attribute">
+<dt class="sig sig-object py" id="ex_installer.file_manager.ThreadedExtractor.extractor_lock">
+<span class="sig-name descname"><span class="pre">extractor_lock</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;unlocked</span> <span class="pre">_thread.lock</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#ex_installer.file_manager.ThreadedExtractor.extractor_lock" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.ThreadedExtractor.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.ThreadedExtractor.run" title="Link to this definition"></a></dt>
+<dd><p>Method representing the thread’s activity.</p>
+<p>You may override this method in a subclass. The standard run() method
+invokes the callable object passed to the object’s constructor as the
+target argument, if any, with sequential and keyword arguments taken
+from the args and kwargs arguments, respectively.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.file_manager.</span></span><span class="sig-name descname"><span class="pre">FileManager</span></span><a class="headerlink" href="#ex_installer.file_manager.FileManager" title="Link to this definition"></a></dt>
+<dd><p>Class for managing files and directories</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.copy_config_files">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">copy_config_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.copy_config_files" title="Link to this definition"></a></dt>
+<dd><p>Copy the specified list of files from source to destination directory</p>
+<p>Returns None if successful, otherwise a list of files that failed to copy</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.delete_config_files">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">delete_config_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.delete_config_files" title="Link to this definition"></a></dt>
+<dd><p>Delete the specified list of files from sepcified directory</p>
+<p>Returns None if successful, otherwise a list of files that failed to copy</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.dir_is_empty">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dir_is_empty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.dir_is_empty" title="Link to this definition"></a></dt>
+<dd><p>Check if directory is empty</p>
+<p>Returns True if so, False if not</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.get_base_dir">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_base_dir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.get_base_dir" title="Link to this definition"></a></dt>
+<dd><p>Returns the base directory for EX-Installer</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.get_config_files">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_config_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pattern_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.get_config_files" title="Link to this definition"></a></dt>
+<dd><p>Function to check for the existence of existing configuration files</p>
+<p>Returns False if no files, otherwise a list of file names matching the provided list of patterns</p>
+<p>Pattern list can contain either:
+- a valid Python regular expression with grouping, where a match is made on one group only (group 1)
+- a file name</p>
+<p>This is a valid example of a pattern: r”^my.*.[^?]*example.h$|(^my.*.h$)”  # noqa: W605
+This is an invalid example of a pattern: r”^config.h$”  # noqa: W605
+This would be valid, but better to just provide filename: r”^(config.h)$”  # noqa: W605</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.get_filepath">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_filepath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.get_filepath" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.get_install_dir">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_install_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">product_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.get_install_dir" title="Link to this definition"></a></dt>
+<dd><p>Returns the path to extract software into</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.get_list_from_file">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_list_from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.get_list_from_file" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.get_temp_dir">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_temp_dir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.get_temp_dir" title="Link to this definition"></a></dt>
+<dd><p>Returns the temp directory</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.is_valid_dir">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_valid_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.is_valid_dir" title="Link to this definition"></a></dt>
+<dd><p>Simply checks directory exists and that it is a directory</p>
+<p>Returns True or False</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.log">
+<span class="sig-name descname"><span class="pre">log</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;Logger</span> <span class="pre">ex_installer.file_manager</span> <span class="pre">(WARNING)&gt;</span></em><a class="headerlink" href="#ex_installer.file_manager.FileManager.log" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.read_config_file">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">read_config_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.read_config_file" title="Link to this definition"></a></dt>
+<dd><p>Function to read and return file contents
+Pass the full path to the file
+Returns the text from the file path if successful, otherwise the exception error message</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.read_version">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">read_version</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">version_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.read_version" title="Link to this definition"></a></dt>
+<dd><p>Function to read a version string from a file</p>
+<p>Not recommended over obtaining versions from GitHub tags, however can be used if those are not defined
+Returns False if no version defined, or a string containing the version</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.rename_dir">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rename_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.rename_dir" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.file_manager.FileManager.write_config_file">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">write_config_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contents</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.file_manager.FileManager.write_config_file" title="Link to this definition"></a></dt>
+<dd><p>Function to write the list of contents to a config file</p>
+<p>Pass the full path to the file and the list of lines to write
+Writes utf-8 encoded</p>
+<p>Returns the same file path if successful, otherwise the exception error message</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<hr class="docutils" />
 <section id="common-fonts">
-<h2>common_fonts<a class="headerlink" href="#common-fonts" title="Link to this heading"></a></h2>
+<h3>common_fonts<a class="headerlink" href="#common-fonts" title="Link to this heading"></a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="ex_installer.common_fonts.CommonFonts">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.common_fonts.</span></span><span class="sig-name descname"><span class="pre">CommonFonts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.common_fonts.CommonFonts" title="Link to this definition"></a></dt>
@@ -1561,7 +1566,7 @@ they will be terminated</p>
 </section>
 <hr class="docutils" />
 <section id="common-widgets">
-<h2>common_widgets<a class="headerlink" href="#common-widgets" title="Link to this heading"></a></h2>
+<h3>common_widgets<a class="headerlink" href="#common-widgets" title="Link to this heading"></a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="ex_installer.common_widgets.WindowLayout">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.common_widgets.</span></span><span class="sig-name descname"><span class="pre">WindowLayout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.common_widgets.WindowLayout" title="Link to this definition"></a></dt>
@@ -1809,6 +1814,7 @@ CreateTooltip(self.widget, “Tool tip contextual help text”[, URL])</p>
 
 </dd></dl>
 
+</section>
 </section>
 <hr class="docutils" />
 <section id="git-client">
