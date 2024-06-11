@@ -62,7 +62,23 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#ex-installer">ex_installer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ex-installer">ex_installer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ex_installer.ex_installer.EXInstaller"><code class="docutils literal notranslate"><span class="pre">EXInstaller</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.ex_installer.EXInstaller.about"><code class="docutils literal notranslate"><span class="pre">EXInstaller.about()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.ex_installer.EXInstaller.acli"><code class="docutils literal notranslate"><span class="pre">EXInstaller.acli</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.ex_installer.EXInstaller.app_version"><code class="docutils literal notranslate"><span class="pre">EXInstaller.app_version</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.ex_installer.EXInstaller.exception_handler"><code class="docutils literal notranslate"><span class="pre">EXInstaller.exception_handler()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.ex_installer.EXInstaller.git"><code class="docutils literal notranslate"><span class="pre">EXInstaller.git</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.ex_installer.EXInstaller.instructions"><code class="docutils literal notranslate"><span class="pre">EXInstaller.instructions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.ex_installer.EXInstaller.news"><code class="docutils literal notranslate"><span class="pre">EXInstaller.news()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.ex_installer.EXInstaller.set_scaling"><code class="docutils literal notranslate"><span class="pre">EXInstaller.set_scaling()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.ex_installer.EXInstaller.switch_view"><code class="docutils literal notranslate"><span class="pre">EXInstaller.switch_view()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.ex_installer.EXInstaller.toggle_debug"><code class="docutils literal notranslate"><span class="pre">EXInstaller.toggle_debug()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex_installer.ex_installer.EXInstaller.website"><code class="docutils literal notranslate"><span class="pre">EXInstaller.website()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#manage-arduino-cli">manage_arduino_cli</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#ex_installer.manage_arduino_cli.ManageArduinoCLI.check_arduino_cli"><code class="docutils literal notranslate"><span class="pre">ManageArduinoCLI.check_arduino_cli()</span></code></a></li>
@@ -398,6 +414,92 @@
 <hr class="docutils" />
 <section id="ex-installer">
 <h2>ex_installer<a class="headerlink" href="#ex-installer" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ex_installer.ex_installer.EXInstaller">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ex_installer.ex_installer.</span></span><span class="sig-name descname"><span class="pre">EXInstaller</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.ex_installer.EXInstaller" title="Link to this definition"></a></dt>
+<dd><p>EX-Installer root window</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.ex_installer.EXInstaller.about">
+<span class="sig-name descname"><span class="pre">about</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.ex_installer.EXInstaller.about" title="Link to this definition"></a></dt>
+<dd><p>Message box popup for the Info -&gt; About menu item</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ex_installer.ex_installer.EXInstaller.acli">
+<span class="sig-name descname"><span class="pre">acli</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ex_installer.arduino_cli.ArduinoCLI</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#ex_installer.ex_installer.EXInstaller.acli" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ex_installer.ex_installer.EXInstaller.app_version">
+<span class="sig-name descname"><span class="pre">app_version</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'0.0.18'</span></em><a class="headerlink" href="#ex_installer.ex_installer.EXInstaller.app_version" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.ex_installer.EXInstaller.exception_handler">
+<span class="sig-name descname"><span class="pre">exception_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exc_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_traceback</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.ex_installer.EXInstaller.exception_handler" title="Link to this definition"></a></dt>
+<dd><p>Handler for uncaught exceptions</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ex_installer.ex_installer.EXInstaller.git">
+<span class="sig-name descname"><span class="pre">git</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ex_installer.git_client.GitClient</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#ex_installer.ex_installer.EXInstaller.git" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.ex_installer.EXInstaller.instructions">
+<span class="sig-name descname"><span class="pre">instructions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.ex_installer.EXInstaller.instructions" title="Link to this definition"></a></dt>
+<dd><p>Link to EX-Installer instructions from the Info menu</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.ex_installer.EXInstaller.news">
+<span class="sig-name descname"><span class="pre">news</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.ex_installer.EXInstaller.news" title="Link to this definition"></a></dt>
+<dd><p>Link to DCC-EX News articles for EX-Installer</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.ex_installer.EXInstaller.set_scaling">
+<span class="sig-name descname"><span class="pre">set_scaling</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.ex_installer.EXInstaller.set_scaling" title="Link to this definition"></a></dt>
+<dd><p>Function to set the screen scaling value</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.ex_installer.EXInstaller.switch_view">
+<span class="sig-name descname"><span class="pre">switch_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">view_class</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">product</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.ex_installer.EXInstaller.switch_view" title="Link to this definition"></a></dt>
+<dd><p>Function to switch views</p>
+<p>These views require a product parameter to be supplied:
+- compile_upload
+- select_version_config
+- advanced_config</p>
+<p>These views should get version info if available:
+- ex_commandstation</p>
+<p>Version should ideally contain semantic numbering, but any name will work
+If semantic numbering is used, the product configuration screens can determine
+options based on those numbers</p>
+<p>For semantic numbering to work, it must match GitHub tag format:
+vX.Y.Z-Prod|Devel</p>
+<p>Version info will be available in:
+self.product_version_name
+self.product_major_version
+self.product_minor_version
+self.product_patch_version</p>
+<p>All default to None if not defined</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.ex_installer.EXInstaller.toggle_debug">
+<span class="sig-name descname"><span class="pre">toggle_debug</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.ex_installer.EXInstaller.toggle_debug" title="Link to this definition"></a></dt>
+<dd><p>Function to enable/disable debug logging from the menu</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ex_installer.ex_installer.EXInstaller.website">
+<span class="sig-name descname"><span class="pre">website</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.ex_installer.EXInstaller.website" title="Link to this definition"></a></dt>
+<dd><p>Link to the DCC-EX website from the Info menu</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 <section id="manage-arduino-cli">
 <h2>manage_arduino_cli<a class="headerlink" href="#manage-arduino-cli" title="Link to this heading"></a></h2>
@@ -538,19 +640,15 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.copy_config_files">
 <span class="sig-name descname"><span class="pre">copy_config_files</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.copy_config_files" title="Link to this definition"></a></dt>
-<dd><dl class="simple">
-<dt>Function to copy config files from selected directory to product directory</dt><dd><p>also switches view to advanced_config if copy is successful</p>
-</dd>
-</dl>
+<dd><p>Function to copy config files from selected directory to product directory
+also switches view to advanced_config if copy is successful</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="ex_installer.select_version_config.SelectVersionConfig.delete_config_files">
 <span class="sig-name descname"><span class="pre">delete_config_files</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.select_version_config.SelectVersionConfig.delete_config_files" title="Link to this definition"></a></dt>
-<dd><dl class="simple">
-<dt>Function to delete config files from product directory</dt><dd><p>needed on subsequent passes thru the logic</p>
-</dd>
-</dl>
+<dd><p>Function to delete config files from product directory
+needed on subsequent passes thru the logic</p>
 </dd></dl>
 
 <dl class="py method">
