@@ -468,9 +468,9 @@
 - macOS - macOS (64 bit only)</p></li>
 </ul>
 <p>The build commands should be executed in a command prompt or terminal window in the directory containing the cloned repository.</p>
-<p>Windows command:</p>
+<p><strong>Windows command:</strong></p>
 <p><cite>pyinstaller –windowed –clean –onefile –icon=ex_installerimagesdccex-logo.png ex_installer__main__.py –name “EX-Installer-&lt;platform&gt;” –add-data “&lt;repository&gt;ex_installerimages*;images” –add-data “&lt;repository&gt;ex_installerthemedcc-ex-theme.json;theme/.” –add-data “&lt;repository&gt;venvLibsite-packagescustomtkinter;customtkinter”</cite></p>
-<p>Linux command:</p>
+<p><strong>Linux command:</strong></p>
 <p><cite>pyinstaller –windowed –clean –onefile –icon=ex_installer/images/dccex-logo.png ex_installer/__main__.py –name “EX-Installer-&lt;platform&gt;” –add-data “&lt;repository&gt;/ex_installer/images/*:images” –add-data “&lt;repository&gt;/ex_installer/theme/dcc-ex-theme.json:theme/.” –add-data “&lt;repository&gt;/venv/lib/python3.8/site-packages/customtkinter:customtkinter” –hidden-import=”PIL._tkinter_finder”</cite></p>
 </section>
 </section>
