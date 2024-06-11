@@ -1132,14 +1132,10 @@ else:
 <dd><p>Function to be called by the switch_frame function to set the chosen version</p>
 <p>This allows configuration options to be set based on the chosen version</p>
 <p>Eg.
-if self.product_major_version &gt;=4 and self.product_minor_version &gt;= 2:</p>
-<blockquote>
-<div><p>function_enables_track_manager()</p>
-</div></blockquote>
-<dl class="simple">
-<dt>else:</dt><dd><p>function_disables_track_manager()</p>
-</dd>
-</dl>
+if self.product_major_version &gt;=4 and self.product_minor_version &gt;= 2:
+-    function_enables_track_manager()
+else:
+-    function_disables_track_manager()</p>
 </dd></dl>
 
 <dl class="py method">
