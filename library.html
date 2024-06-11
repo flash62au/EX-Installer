@@ -1746,17 +1746,13 @@ they will be terminated</p>
 textbox = FormattedTextbox(master, arguments)
 textbox.insert_bullet(“insert”, “Bullet list item”)</p>
 <p>For a number of bullet list items:
-bullet_list = [</p>
-<blockquote>
-<div><p>“Item 1”,
+bullet_list = [
+“Item 1”,
 “Item 2”,
-“Item 3</p>
-</div></blockquote>
-<p>]
-for item in bullet_list:</p>
-<blockquote>
-<div><p>textbox.insert_bullet(“insert”, item)</p>
-</div></blockquote>
+“Item 3
+]
+for item in bullet_list:
+-   textbox.insert_bullet(“insert”, item)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="ex_installer.common_widgets.FormattedTextbox.insert_bullet">
 <span class="sig-name descname"><span class="pre">insert_bullet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ex_installer.common_widgets.FormattedTextbox.insert_bullet" title="Link to this definition"></a></dt>
